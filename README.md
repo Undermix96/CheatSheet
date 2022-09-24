@@ -1,3 +1,3 @@
 # CheatSheet
 
-[Linux Terminal](Linux Terminal.md)
+[Linux Terminal](Linux%20Terminal.md)
