@@ -3,6 +3,7 @@
 ln -s DESTINATION LINK
 ```
 DESTINATION is the file/folder wich has data in it
+
 LINK is the link that you will use to reach the DESTINATION
 
 Example:
