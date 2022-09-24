@@ -1,0 +1,1 @@
+ln -s /mnt/tools/docker-compose-file/ compose-file
