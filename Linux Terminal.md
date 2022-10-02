@@ -34,3 +34,36 @@ iface enp0s5  inet static
  gateway 192.168.2.254
  dns-nameservers 192.168.2.254
 ```
+
+
+## Extract File
+```
+tar -xzvf file.tar.gz
+```
+In a specific folder
+```
+tar -xzvf my.tar.gz -C /home/vivek/backups/
+```
+
+## Compress File
+```
+tar -czvf file.tar.gz /home/vivek/data/
+```
+
+
+## Copy file trought SSH
+Syntax:
+
+```
+scp <source> <destination>
+```
+
+To copy a file from B to A while logged into B:
+```
+scp /path/to/file username@a:/path/to/destination
+```
+
+To copy a file from B to A while logged into A:
+```
+scp username@b:/path/to/file /path/to/destination
+```
