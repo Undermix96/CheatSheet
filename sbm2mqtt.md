@@ -2,13 +2,13 @@
 
 Build the Docker image:
 
-```
+```bash
 docker build . -t sbm2mqtt
 ```
 
 To spin up the Docker container, either use the following command replacing the environmental variable defaults with your own:
 
-```
+```bash
 docker run -d --net=host --privileged -it -e REPORTING_INTERVAL=30 sbm2mqtt
 ```
 
