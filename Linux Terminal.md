@@ -67,3 +67,8 @@ To copy a file from B to A while logged into A:
 ```bash
 scp username@b:/path/to/file /path/to/destination
 ```
+
+## Change Hostname
+```bash
+sudo nano /etc/hostname
+```
