@@ -46,3 +46,48 @@ When you finished editing /etc/default/grub run this command:
 ```
 update-grub
 ```
+
+## Step 2: VFIO Modules
+
+You'll need to add a few VFIO modules to your Proxmox system. Again, using nano (or whatever), edit the file /etc/modules
+
+```
+nano /etc/modules
+```
+Add the following (copy/paste) to the /etc/modules file:
+
+```
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
+```
+
+Then save and exit.
+
+## Step 3: IOMMU interrupt remapping
+
+I'm not going to get too much into this; all you really need to do is run the following commands in your Shell:
+```
+echo "options vfio_iommu_type1 allow_unsafe_interrupts=1" > /etc/modprobe.d/iommu_unsafe_interrupts.conf
+```
+
+```
+echo "options kvm ignore_msrs=1" > /etc/modprobe.d/kvm.conf
+```
+
+## Step 4: Blacklisting Drivers
+
+We don't want the Proxmox host system utilizing our GPU(s), so we need to blacklist the drivers. Run these commands in your Shell:
+
+```
+echo "blacklist radeon" >> /etc/modprobe.d/blacklist.conf
+```
+
+```
+echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+```
+
+```
+echo "blacklist nvidia" >> /etc/modprobe.d/blacklist.conf
+```
