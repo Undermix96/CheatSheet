@@ -72,3 +72,12 @@ scp username@b:/path/to/file /path/to/destination
 ```bash
 sudo nano /etc/hostname
 ```
+
+## Create System User and Group with specific UID/GID and no login
+```bash
+sudo groupadd -g GID GROUPNAME
+```
+
+```bash
+sudo adduser USERNAME --uid UID --gid GID --system
+```
