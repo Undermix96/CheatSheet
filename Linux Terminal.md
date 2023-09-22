@@ -125,3 +125,6 @@ sudo apt install linux-image-<flavour>
 ```
 
 Reboot to make changes effective
+
+## Install WiFi driver
+https://github.com/lwfinger/rtw88
