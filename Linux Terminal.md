@@ -81,3 +81,29 @@ sudo groupadd -g GID GROUPNAME
 ```bash
 sudo adduser USERNAME --uid UID --gid GID --system
 ```
+
+## Debian Upgrade
+Upgrade Software
+```bash
+sudo apt-get update
+```
+
+```bash
+sudo apt-get upgrade
+```
+
+```bash
+sudo apt-get full-upgrade
+```
+
+Clean unused packages
+```bash
+sudo apt-get autoremove
+```
+
+Re-do (just to be sure)
+```bash
+sudo apt-get upgrade
+```
+
+Reboot to make changes effective
