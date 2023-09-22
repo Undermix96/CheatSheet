@@ -85,25 +85,43 @@ sudo adduser USERNAME --uid UID --gid GID --system
 ## Debian Upgrade
 Upgrade Software
 ```bash
-sudo apt-get update
+sudo apt update
 ```
 
 ```bash
-sudo apt-get upgrade
+sudo apt upgrade
 ```
 
 ```bash
-sudo apt-get full-upgrade
+sudo apt full-upgrade
 ```
 
 Clean unused packages
 ```bash
-sudo apt-get autoremove
+sudo apt autoremove
 ```
 
 Re-do (just to be sure)
 ```bash
-sudo apt-get upgrade
+sudo apt upgrade
+```
+
+Reboot to make changes effective
+
+## Kernel Upgrade
+Check kernerl version
+```bash
+uname -r
+```
+
+Search for kernel version available
+```bash
+sudo apt-cache search linux-image
+```
+
+Install new kernel
+```bash
+sudo apt install linux-image-<flavour>
 ```
 
 Reboot to make changes effective
