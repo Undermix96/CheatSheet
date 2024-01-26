@@ -128,3 +128,26 @@ Reboot to make changes effective
 
 ## Install WiFi driver
 https://github.com/lwfinger/rtw88
+
+## Disable Root Login
+### Disable Shell Login
+Open passwd file
+```bash
+sudo nano /etc/passwd
+```
+Change the line
+```bash
+root:x:0:0:root:/root:/bin/bash
+```
+to
+```bash
+root:x:0:0:root:/root:/sbin/nologin
+```
+
+### Disable SSH Login
+Open SSH config file
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+
+Uncomment the **PermitRootLogin** and set it to **no** or **prohibit-password**
