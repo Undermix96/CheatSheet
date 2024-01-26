@@ -177,3 +177,10 @@ To remove the label from a node, provide the key without any value.
 ```bash
 kubectl label --overwrite nodes <node-name> <label-name>-
 ```
+
+
+## K8s
+Restart all pods in a namespace
+```bash
+kubectl -n <namespace> rollout restart deploy
+```
