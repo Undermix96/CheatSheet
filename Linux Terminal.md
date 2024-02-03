@@ -184,3 +184,22 @@ Restart all pods in a namespace
 ```bash
 kubectl -n <namespace> rollout restart deploy
 ```
+
+## Disable IPv6
+Edit the /etc/sysctl.conf file.
+```bash
+sudo nano /etc/sysctl.conf
+```
+
+Edit the sysctl Configuration File
+```bash
+# Disabling the IPv6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+
+Apply the Changes
+```bash
+sudo sysctl -p
+```
