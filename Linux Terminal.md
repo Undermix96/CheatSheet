@@ -185,6 +185,11 @@ Restart all pods in a namespace
 kubectl -n <namespace> rollout restart deploy
 ```
 
+Enter Shell in a pod
+```bash
+kubectl exec --stdin --tty <pod-name> -- /bin/bash
+```
+
 ## Disable IPv6
 Edit the /etc/sysctl.conf file.
 ```bash
