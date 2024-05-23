@@ -7,7 +7,7 @@ This is my cheatsheet with all the code snippet that I search frequently on inte
 ### Generic Linux
 - [Linux Terminal](Linux%20Terminal.md)
 - [Raspbian](Raspbian.md)
-- [ZFS Management](zfs-management)
+- [ZFS Management](zfs-management.md)
 
 ### DB Administration
 - [PostgreSQL](postgresql.md)
