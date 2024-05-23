@@ -2,9 +2,19 @@
 
 This is my cheatsheet with all the code snippet that I search frequently on internet.
 
-
-
 ## Chapters
+
+### Generic Linux
 - [Linux Terminal](Linux%20Terminal.md)
-- [Switchbot 2 MQTT](sbm2mqtt.md)
 - [Raspbian](Raspbian.md)
+- [ZFS Management](zfs-management)
+
+### DB Administration
+- [PostgreSQL](postgresql.md)
+
+### Proxmox
+- [GPU Passthrough](proxmox/GpuPassthrough.md)
+- [Windows Guest](proxmox/WindowsGuest.md)
+
+### Docker Image
+- [Switchbot 2 MQTT](sbm2mqtt.md)
