@@ -190,6 +190,16 @@ Enter Shell in a pod
 kubectl exec --stdin --tty <pod-name> -- /bin/bash
 ```
 
+Force Delete a pod
+```bash
+kubectl delete pods <pod> --grace-period=0 --force
+```
+
+Get Events ordered by timestamp
+```bash
+ kubectl get events --all-namespaces  --sort-by='.metadata.creationTimestamp'
+```
+
 ## Disable IPv6
 Edit the /etc/sysctl.conf file.
 ```bash
