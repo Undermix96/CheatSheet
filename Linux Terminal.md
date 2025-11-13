@@ -171,3 +171,7 @@ Apply the Changes
 ```bash
 sudo sysctl -p
 ```
+
+## Get Public IP
+curl https://ipinfo.io/ip
+
