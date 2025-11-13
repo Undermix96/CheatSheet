@@ -173,5 +173,6 @@ sudo sysctl -p
 ```
 
 ## Get Public IP
+```bash
 curl https://ipinfo.io/ip
-
+```
