@@ -176,3 +176,8 @@ sudo sysctl -p
 ```bash
 curl https://ipinfo.io/ip
 ```
+
+## Rsync 2 folder (from a server to this machine)
+```bash
+sudo rsync -ah --info=progress2 -e "ssh -l <user> -i /home/<user>/.ssh/id_ed25519" <user>@<ip_address>:/mnt/somewhere/. /mnt/somewhere/
+```
