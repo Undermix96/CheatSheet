@@ -181,3 +181,8 @@ curl https://ipinfo.io/ip
 ```bash
 sudo rsync -ah --info=progress2 -e "ssh -l <user> -i /home/<user>/.ssh/id_ed25519" <user>@<ip_address>:/mnt/somewhere/. /mnt/somewhere/
 ```
+
+## Get Folder dimensions, ordered by size
+```bash
+du -h -d 1 /mnt/somewhere/ | sort -rh
+```
